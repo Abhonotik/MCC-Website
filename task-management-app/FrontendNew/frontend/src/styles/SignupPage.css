@@ -1,0 +1,95 @@
+/* Center the signup container and prevent overlapping */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Ensure full viewport height */
+    background-color: #111827; /* Dark Gray */
+    padding-top: 100px; /* Adjust for navbar height */
+    padding-bottom: 50px; /* Prevent cutting off content */
+    flex-direction: column;
+}
+
+/* Style the signup form */
+.signup-form {
+    background-color: #1f2937; /* Darker shade of gray */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    min-height: 350px; /* Enough height for proper spacing */
+    box-sizing: border-box;
+}
+
+/* Style form title */
+.signup-title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif; /* Fancy font */
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+/* Style input fields */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: 1px solid #374151;
+    background-color: transparent;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Style the signup button */
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb; /* Tailwind's blue-600 */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #1e40af; /* Tailwind's blue-800 */
+}
+
+/* Error message */
+.error-message {
+    color: #ff4d4d;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+/* Login text */
+.login-text {
+    margin-top: 1rem;
+    color: #d1d5db;
+}
+
+.login-link {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Fixes for Small Screens */
+@media (max-width: 600px) {
+    .signup-container {
+        padding-top: 120px; /* More spacing for navbar */
+        padding-bottom: 70px;
+    }
+    .signup-form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
